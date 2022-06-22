@@ -1,32 +1,23 @@
 
-<html lang="pt-br"><head>
-    <centralize text></centralize>
-    <title>ViaCEP - Webservice CEP e IBGE gratuito</title>
-    <meta charset="utf-8">
-    <meta name="keywords" content="webservice, gratuito, gratis, cep, ibge, gia, ddd, siafi, json, xml, query, piped, endereco, busca cep, correios, pesquisa cep, ajax, serviço">
-    <meta name="description" content="Webservice gratuito para pesquisa de endereço via CEP, suporta Ajax e retorno no formato JSON, XML, PIPED ou QUERY String.">
-    <meta name="rating" content="General">
-    <meta name="revisit-after" content="7">
-    <meta name="google-site-verification" content="UcBPI0QtVFtvB4gxAwjk8ncJuFI5Un5AozPW5yjiNiM">
-    <link href="//fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
-    <link href="/estatico/css/A.viacep.css.pagespeed.cf.ZbDeB1AzWB.css" rel="stylesheet" type="text/css" media="screen">
-    <style type="text/css">input{margin-bottom:10px}</style>
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <link rel="dns-prefetch" href="//www.paypalobjects.com"><script type="text/javascript" src="https://ui.cleverwebserver.com/"></script></head>
-    <body><div id="clever-57801-top-scroll" style="cursor: pointer !important; position: relative !important; width: 100% !important; overflow: hidden !important; z-index: 5 !important; clip-path: inset(0px) !important; transition: height 0.5s ease 0s !important;height:248.7px !important;"><button id="clever-57801-top-scroll-button" alt="Close" style="left: 1vw !important; bottom: 2vh !important; padding: 5px 8px !important; position: absolute !important; z-index: 99 !important; border-radius: 25px !important; border: 1px solid rgba(30, 30, 30, 0.74) !important; background: rgba(255, 255, 255, 0.51) !important; font-size: 0.8rem !important;cursor:pointer !important;">Fechar Pub</button><div id="clever-57801-top-scroll-shadow" style="position: absolute !important; width: 100% !important; height: 100% !important; box-shadow: rgba(0, 0, 0, 0.3) 0px -180px 100px -110px inset !important;z-index:9 !important;"></div><iframe id="clever-57801-top-scroll-iframe" name="clever-core-ads" src="https://sender.clevernt.com/transporter/57801.php?ppuc=1&amp;ppu=0&amp;id=585732&amp;ref=aHR0cHM6Ly92aWFjZXAuY29tLmJyL2V4ZW1wbG8vamF2YXNjcmlwdC8%3D&amp;ruri=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS5ici8%3D&amp;r=540431352&amp;tok=33419711310201791433&amp;cmpId=&amp;iv=-1&amp;ctr=BR&amp;sz=829&amp;landing=1&amp;hei=248.7&amp;mode=topscroll" title="topscroll-iframe-57801" frameborder="0" scrolling="no" style="top: 0px !important; left: 0px !important; width: 100% !important; position: fixed !important;height:30vh !important;"></iframe></div>
-    <div id="topo">
-    <div class="titulo1">
-    <a href="/">
-    <img src="/estatico/images/viacep.png.pagespeed.ce.I80LiA6qpr.png" alt="ViaCEP">
-    </a>
-    </div>
-    <div class="titulo2">
-    Consulte CEPs de todo o Brasil
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>CEPS do PAIZÃO</title>
+          </head>
+          <body style="background-color:#1c87c9;">
+            <h1>Consulte CEPs de todo o territorio Brasileiro</h1>
+            
+          </body>
+        </html>
+
     </div>
     </div>
     <div id="barra"></div>
     <div id="conteudo">
     <script id="CleverCoreLoader57801" src="//scripts.cleverwebserver.com/57a48f5e93f3c18e408bb15f00e32958.js" async="" type="text/javascript" data-target="" data-callback="put-your-callback-macro-here"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script>function limpa_formulário_cep(){document.getElementById('rua').value=("");document.getElementById('bairro').value=("");document.getElementById('cidade').value=("");document.getElementById('uf').value=("");document.getElementById('ibge').value=("");}function meu_callback(conteudo){if(!("erro"in conteudo)){document.getElementById('rua').value=(conteudo.logradouro);document.getElementById('bairro').value=(conteudo.bairro);document.getElementById('cidade').value=(conteudo.localidade);document.getElementById('uf').value=(conteudo.uf);document.getElementById('ibge').value=(conteudo.ibge);}else{limpa_formulário_cep();alert("CEP não encontrado.");}}function pesquisacep(valor){var cep=valor.replace(/\D/g,'');if(cep!=""){var validacep=/^[0-9]{8}$/;if(validacep.test(cep)){document.getElementById('rua').value="...";document.getElementById('bairro').value="...";document.getElementById('cidade').value="...";document.getElementById('uf').value="...";document.getElementById('ibge').value="...";var script=document.createElement('script');script.src='https://viacep.com.br/ws/'+cep+'/json/?callback=meu_callback';document.body.appendChild(script);}else{limpa_formulário_cep();alert("Formato de CEP inválido.");}}else{limpa_formulário_cep();}};</script>
+    
+    <centralize text></centralize>
     <h3>Informe o CEP</h3>
     <p>Digite o CEP e ao sair o campo o endereço será completado.
     Pode utilizar a tecla TAB após digitar o CEP.</p>
@@ -50,138 +41,15 @@
     <input name="ibge" type="text" id="ibge" size="8">
     </label><br>
     </form>
-    <h3>Código Fonte (Javascript e Json)</h3>
-    <pre><code>
-        &lt;html&gt;
-        &lt;head&gt;
-        &lt;title&gt;ViaCEP Webservice&lt;/title&gt;
-        &lt;meta http-equiv="Content-Type" content="text/html; charset=utf-8" /&gt;
-    
-        &lt;!-- Adicionando Javascript --&gt;
-        &lt;script&gt;
-        
-        function limpa_formulário_cep() {
-                //Limpa valores do formulário de cep.
-                document.getElementById('rua').value=("");
-                document.getElementById('bairro').value=("");
-                document.getElementById('cidade').value=("");
-                document.getElementById('uf').value=("");
-                document.getElementById('ibge').value=("");
-        }
-    
-        function meu_callback(conteudo) {
-            if (!("erro" in conteudo)) {
-                //Atualiza os campos com os valores.
-                document.getElementById('rua').value=(conteudo.logradouro);
-                document.getElementById('bairro').value=(conteudo.bairro);
-                document.getElementById('cidade').value=(conteudo.localidade);
-                document.getElementById('uf').value=(conteudo.uf);
-                document.getElementById('ibge').value=(conteudo.ibge);
-            } //end if.
-            else {
-                //CEP não Encontrado.
-                limpa_formulário_cep();
-                alert("CEP não encontrado.");
-            }
-        }
-            
-        function pesquisacep(valor) {
-    
-            //Nova variável "cep" somente com dígitos.
-            var cep = valor.replace(/\D/g, '');
-    
-            //Verifica se campo cep possui valor informado.
-            if (cep != "") {
-    
-                //Expressão regular para validar o CEP.
-                var validacep = /^[0-9]{8}$/;
-    
-                //Valida o formato do CEP.
-                if(validacep.test(cep)) {
-    
-                    //Preenche os campos com "..." enquanto consulta webservice.
-                    document.getElementById('rua').value="...";
-                    document.getElementById('bairro').value="...";
-                    document.getElementById('cidade').value="...";
-                    document.getElementById('uf').value="...";
-                    document.getElementById('ibge').value="...";
-    
-                    //Cria um elemento javascript.
-                    var script = document.createElement('script');
-    
-                    //Sincroniza com o callback.
-                    script.src = 'https://viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
-    
-                    //Insere script no documento e carrega o conteúdo.
-                    document.body.appendChild(script);
-    
-                } //end if.
-                else {
-                    //cep é inválido.
-                    limpa_formulário_cep();
-                    alert("Formato de CEP inválido.");
-                }
-            } //end if.
-            else {
-                //cep sem valor, limpa formulário.
-                limpa_formulário_cep();
-            }
-        };
-    
-        &lt;/script&gt;
-        &lt;/head&gt;
-    
-        &lt;body&gt;
-        &lt;!-- Inicio do formulario --&gt;
-          &lt;form method="get" action="."&gt;
-            &lt;label&gt;Cep:
-            &lt;input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                   onblur="pesquisacep(this.value);" /&gt;&lt;/label&gt;&lt;br /&gt;
-            &lt;label&gt;Rua:
-            &lt;input name="rua" type="text" id="rua" size="60" /&gt;&lt;/label&gt;&lt;br /&gt;
-            &lt;label&gt;Bairro:
-            &lt;input name="bairro" type="text" id="bairro" size="40" /&gt;&lt;/label&gt;&lt;br /&gt;
-            &lt;label&gt;Cidade:
-            &lt;input name="cidade" type="text" id="cidade" size="40" /&gt;&lt;/label&gt;&lt;br /&gt;
-            &lt;label&gt;Estado:
-            &lt;input name="uf" type="text" id="uf" size="2" /&gt;&lt;/label&gt;&lt;br /&gt;
-            &lt;label&gt;IBGE:
-            &lt;input name="ibge" type="text" id="ibge" size="8" /&gt;&lt;/label&gt;&lt;br /&gt;
-          &lt;/form&gt;
-        &lt;/body&gt;
-    
-        &lt;/html&gt;
+
         </code></pre>
     </div>
-    <div id="footer">
-    <a href="/faleconosco/">Fale Conosco - ViaCEP</a>
-    <br>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-    <input type="hidden" name="cmd" value="_s-xclick">
-    <input type="hidden" name="hosted_button_id" value="V7G5BB25AAW4L">
-    <input type="image" src="/estatico/images/paypal.png.pagespeed.ce.JV2L7As_Be.png" name="submit" class="donatebutton" alt="PayPal - A maneira fácil e segura de enviar pagamentos online!">
-    <img alt="" src="https://www.paypalobjects.com/pt_BR/i/scr/pixel.gif" width="1" height="1">
-    </form>
-    <form action="https://pagseguro.uol.com.br/checkout/v2/donation.html" method="post">
-    <input type="hidden" name="currency" value="BRL">
-    <input type="hidden" name="receiverEmail" value="viacepmail@gmail.com">
-    <input type="hidden" name="iot" value="button">
-    <input type="image" src="/estatico/images/pagseguro.gif.pagespeed.ce.vs0OUH_QxC.gif" name="submit" alt="Pague com PagSeguro - é rápido, grátis e seguro!">
-    </form>
-    <a href="https://picpay.me/leandro.zanuz">
-    <img src="/estatico/images/picpay.png.pagespeed.ce.qGS0eli8fV.png" class="donatebutton" alt="PicPay">
-    </a>
-    <br>
-    <span class="atencao">
-    Aviso: Ao constatar o uso de scripts de acesso
-    massivo seu IP será automaticamente bloqueado
-    por tempo indeterminado.
-    <br>
-    Não distribuímos ou comercializamos bases de dados.
-    </span>
+    
+
     </div>
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-58848920-3','auto');ga('send','pageview');</script>
     <script data-cfasync="false" type="text/javascript" id="clever-core">(function(document,window){var a,c=document.createElement("script");c.id="CleverCoreLoader57801";c.src="//scripts.cleverwebserver.com/57a48f5e93f3c18e408bb15f00e32958.js";c.async=!0;c.type="text/javascript";c.setAttribute("data-target",window.name);c.setAttribute("data-callback","put-your-callback-macro-here");try{a=parent.document.getElementsByTagName("script")[0]||document.getElementsByTagName("script")[0];}catch(e){a=!1;}a||(a=document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]);a.parentNode.insertBefore(c,a);})(document,window);</script>
     
-    
     </body></html>
+
+    <link rel="stylesheet" href="style.css" >
